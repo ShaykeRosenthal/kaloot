@@ -1,0 +1,8 @@
+.page-container{
+    display: grid;
+    grid-template-columns: 16.5% auto 20%;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+}

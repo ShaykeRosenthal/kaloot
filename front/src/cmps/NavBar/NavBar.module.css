@@ -1,0 +1,371 @@
+.nav-bar-cont {
+    color: black;
+    width: 100%;
+    border: 2px solid black;
+    display: inline-block;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+
+
+.nav-bar-link-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    position: absolute;
+}
+
+.nav-bar-link-cont-no-user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    height: 50px;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    /* margin-top: 30px; */
+}
+
+.login {
+    user-select: none;
+    cursor: pointer;
+    float: right;
+    margin: 15px 10px 10px 10px;
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+.home {
+    user-select: none;
+    cursor: pointer;
+    float: left;
+    margin: 15px 10px 10px 10px;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.nav-bar-btn {
+    user-select: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.nav-bar-btn:hover {
+    text-decoration: underline;
+}
+
+.nav-bar-btn-user {
+    user-select: none;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+.nav-bar-btn-user:hover {
+    text-decoration: underline;
+}
+
+.none {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger-open {
+    display: none;
+}
+
+.nav-bar-link-cont-user {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 770px) {
+    .nav-bar-btn-user {
+        display: none;
+    }
+
+    .nav-bar-link-cont-user {
+        flex-direction: column;
+    }
+
+    .nav-bar-cont {
+        height: 300vh;
+        right: 0;
+        z-index: 1;
+        position: absolute;
+        border: 2px solid black;
+        /* width: 75%; */
+        margin-left: calc(100% - 50px);
+        width: 50px;
+        height: 50px;
+        border: 0;
+        animation-name: nav-bar;
+        animation-duration: 0.5s;
+    }
+
+    .nav-bar-cont-open {
+        color: black;
+        width: 75%;
+        border: 2px solid black;
+        display: inline-block;
+        height: 200vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        /* margin-left: 25%; */
+        animation-name: nav-bar-open;
+        animation-duration: 0.5s;
+        z-index: 1;
+    }
+
+    @keyframes nav-bar-open {
+        0% {
+            width: 0%;
+            /* margin-left: 0%; */
+
+        }
+
+
+
+        100% {
+            width: 75%;
+            /* margin-left: 25%; */
+        }
+    }
+
+    @keyframes nav-bar {
+        0% {
+            width: 75%;
+            /* margin-left: 0%; */
+            height: 200vh;
+            border: 2px solid black;
+        }
+
+        50% {
+            width: 0%;
+            height: 200vh;
+            border: 2px solid black;
+        }
+
+        100% {
+            width: 0%;
+            /* margin-left: 25%; */
+            height: 50px;
+            border: 2px solid white;
+        }
+    }
+
+    @keyframes bar1-open {
+        0% {
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes bar1 {
+        0% {
+            transform: rotate(45deg);
+
+        }
+
+        50% {
+            transform: rotate(0deg);
+            /* margin-top: 25px; */
+        }
+
+        100% {
+            /* margin-top: -25px */
+        }
+    }
+
+    @keyframes bar2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes bar3-open {
+        0% {
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @keyframes bar3 {
+        0% {
+            transform: rotate(-45deg);
+
+        }
+
+        50% {
+            transform: rotate(0deg);
+            margin-top: -4px;
+        }
+
+        100% {
+            margin-top: 0px
+        }
+    }
+
+    @keyframes hamburger {
+        0% {
+            /* transform: rotate(-45deg); */
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+
+        50% {
+            /* jusstify-content: center; */
+        }
+
+        100% {
+            justify-content: space-around;
+            /* align-items: center; */
+        }
+    }
+
+    .nav-bar-link-cont-no-user {
+        flex-direction: column;
+    }
+
+    .login {
+        float: none;
+        display: none;
+        /* margin-top: 5px; */
+    }
+
+    .home {
+        float: none;
+        display: none;
+        /* margin-top: 5px; */
+    }
+
+    .hamburger-open {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        top: 0;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .hamburger {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        top: 0;
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        animation-name: hamburger;
+        animation-duration: 0.5s;
+    }
+
+    .hamburger-bar1 {
+        width: 80%;
+        height: 4px;
+        background-color: gray;
+        transform: rotate(0deg);
+        margin-top: 0px;
+        animation-name: bar1;
+        animation-duration: 0.5s;
+    }
+
+    .hamburger-bar2 {
+        width: 80%;
+        height: 4px;
+        background-color: gray;
+        opacity: 1;
+        animation-name: bar2;
+        animation-duration: 0.5s;
+
+    }
+
+
+    .hamburger-bar3 {
+        width: 80%;
+        height: 4px;
+        background-color: gray;
+        margin-top: 0px;
+        transform: rotate(0deg);
+        animation-name: bar3;
+        animation-duration: 0.5s;
+    }
+
+
+
+    .hamburger-bar1-open {
+        width: 80%;
+        height: 4px;
+        background-color: gray;
+        /* opacity:0; */
+        transform: rotate(45deg);
+        animation-name: bar1-open;
+        animation-duration: 0.5s;
+    }
+
+    .hamburger-bar2-open {
+        width: 80%;
+        height: 4px;
+        opacity: 0;
+        display: none;
+        background-color: gray;
+        /* animation-name: bar2;
+        animation-duration: 1s; */
+
+    }
+
+    .hamburger-bar3-open {
+        width: 80%;
+        height: 4px;
+        /* opacity:0; */
+        background-color: gray;
+        transform: rotate(-45deg);
+        animation-name: bar3-open;
+        animation-duration: 0.5s;
+        margin-top: -4px;
+    }
+
+
+}

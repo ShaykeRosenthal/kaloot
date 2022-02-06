@@ -1,0 +1,34 @@
+.big {
+    width: 35%;
+    align-self: center;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.top-rated-cont {
+    list-style-type: none;
+    /* color:black; */
+
+    /* padding: 0; */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* .top-rated-list-item {
+
+} */
+
+.home-page-cont {
+    height: 200vh;
+    color:black;
+}
+
+@media screen and (max-width: 400px) {
+    .top-rated-cont {
+        padding: calc((100% - 310px) / 2);
+    }
+}

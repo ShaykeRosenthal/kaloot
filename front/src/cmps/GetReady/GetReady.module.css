@@ -1,0 +1,30 @@
+.main {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.loader-image {
+    width: 100%;
+    height: auto;
+}
+
+.countdown-container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* background-color: white; */
+    left: calc((100% - 200px) / 2);
+    top: calc((100% - 200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    font-size: 10rem;
+    font-weight: 800;
+    color: white;
+    user-select: none;
+}

@@ -1,0 +1,56 @@
+.tumbnail-container {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid black;
+    height: 150px;
+    position: relative;
+}
+
+.baloot-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.baloot-name {
+    color: black;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 150px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(255, 255, 255, 0.75);
+    user-select: none;
+
+}
+.baloot-name-with-fav{
+    color: black;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 130px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(255, 255, 255, 0.75);
+    user-select: none; 
+}
+.heart-cont {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /* border-radius: 50%; */
+    opacity: 0.75;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    
+}

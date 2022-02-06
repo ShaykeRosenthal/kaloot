@@ -1,0 +1,83 @@
+.main-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pincode {
+    color: red;
+    font-size: xx-large;
+    font-weight: 800px;
+}
+
+.pincode-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pincode-cont-part1 {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+
+}
+
+.copy-clipboard-btn {
+    cursor: pointer;
+}
+
+.copy-clipboard-btn:hover {
+    filter: drop-shadow(-2px 2px 1px black);
+}
+
+.bg-image {
+    /* position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1; */
+    display: none;
+}
+
+.track-list {
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+}
+
+.music-box-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100px;
+}
+
+.bg-img-container {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+}
+
+#qr-cont {
+    margin-top: 15px;
+}

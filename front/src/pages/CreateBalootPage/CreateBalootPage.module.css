@@ -1,0 +1,17 @@
+.page-container{
+    display: grid;
+    grid-template-columns: 16.5% 67% 16.5%;
+    height:200vh;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 770px) {
+    .page-container{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    height:200vh;
+    }
+}

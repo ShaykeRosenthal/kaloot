@@ -1,0 +1,81 @@
+.main-container {
+    color: black;
+    width: 100vw;
+}
+
+.hide {
+    display: none;
+}
+
+.wait {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+.init-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-input-field {
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.wait-players-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.score-board-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.game-over-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.question-cont {
+    width: 100vw;
+}
+
+@media screen and (max-width: 400px) {
+    .get-ready-cont {
+        margin-top: 50%;
+    }
+
+}

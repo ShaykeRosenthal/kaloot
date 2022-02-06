@@ -1,0 +1,25 @@
+.time-limit-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-limit-label {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.baloot-name-input {
+    color: black;
+    border: 3px solid white;
+    outline: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 770px) {
+    .time-limit-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+.triangle-container {
+    height: 100%;
+    flex-basis: 10%;
+    background-color: rgb(226, 27, 60);
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    max-width: 50px;
+    width: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 2rem solid white;
+    align-self: center;
+    margin-top: -14px;
+}
+
+@media screen and (max-width: 770px) {
+
+    .triangle {
+        /* border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-bottom: 1rem solid white;
+        margin-top: 0; */
+        display:none;
+    }
+}
